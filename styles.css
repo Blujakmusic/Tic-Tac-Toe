@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 10%;
+  margin-top: .5%;
+  padding: 0;
+  background-color: #004385; /* Set background color to blue */
+  color: white; /* Set text color to white */
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+.mainTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 30px; /* Add margin to create space */
+}
+
+.ticTacToeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 120px); /* 3 columns, each 120px wide */
+  gap: 3px; /* Space between squares */
+  justify-content: center; /* Center the grid horizontally */
+  margin-top: 5%; /* Add margin to create space */
+}
+
+.square {
+  background: #ffffff;
+  border: 3px solid #004385;
+  border-radius: 25%;
+  color: #004385;
+  font-size: 80px; /* Increased font size */
+  font-weight: bold;
+  line-height: 114px; /* Adjusted line height */
+  height: 120px; /* Increased height */
+  padding: 0;
+  text-align: center;
+  width: 120px; /* Increased width */
+  cursor: pointer; /* Add pointer cursor */
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.square:hover {
+  background-color: #0080FF;
+  color: #ffffff;
+}
+
+.square:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 3px #004385; /* Add custom outline */
+}
+
+.status {
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column; /* Change to column to stack the board and info */
+  align-items: center; /* Center the game container */
+  justify-content: center; /* Center the game container */
+  height: 100vh; /* Full viewport height */
+}
+
+.game-info {
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.restart-button {
+  background-color: #ffffff; /* Set background color */
+  border: none; /* Remove default border */
+  color: #004385; /* Set text color */
+  padding: 15px 30px; /* Increase padding */
+  font-size: 24px; /* Increase font size */
+  border-radius: 50px; /* Make it round like a pill */
+  cursor: pointer; /* Change cursor to pointer */
+  margin-top: 20px; /* Add margin to create space */
+}
+
+.restart-button:hover {
+  background-color: #0080FF; /* Add a hover effect */
+  color: #ffffff;
+}
